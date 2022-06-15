@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    font-family: 'Unica One', cursive;
+    margin: 0px;
+    color: white;
+}
+.title {
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2vw;
+    margin-top: 20vh;
+    white-space: nowrap;
+
+    background: linear-gradient(to right, white 20%, skyblue 40%, skyblue 60%, white 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+}
+@keyframes shine {
+    to {background-position: 200% center;}
+}
+.title-underline {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2vw;
+    margin-top: -10vh;
+    margin-left: 0.8vw;
+    font-family: 'Orbitron', sans-serif;
+
+    background: linear-gradient(to right, white 20%, skyblue 40%, skyblue 60%, white 80%);
+    background-size: 200% auto;       
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;         
+}
+.background {
+    background-image: url(space.png);
+    width: 100%;
+    height: 400vh;
+    position: absolute;
+    object-fit: cover;
+}
+.page {
+    margin-top: 30vh;
+    background-color: #1A1A1A;
+    border: 2px solid white;
+    width: 85%;
+    height: auto;
+    margin-left: 50%;
+    opacity: .9;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 8px 0 skyblue, 0 6px 20px 0 skyblue;
+}
+.page h1 {
+    margin-left: 4vw;
+    letter-spacing: 5px;
+    font-size: 3em;
+    margin-top: 10vh;
+}
+.page p {
+    margin-left: 4vw;
+    font-size: 1.5em;
+    font-family: 'Comfortaa', cursive;
+}
+.vortex-title {
+    width: 1em;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: 2.8vw;
+    margin-bottom: 1.8vh;
+}
+.header {
+    background-color: rgba(20, 20, 20, 1);
+    border-bottom: 2px solid white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 8vh;
+    margin-left: 50%;
+    z-index: 99;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 8px 0 skyblue, 0 6px 20px 0 skyblue;
+}
+.navigation > p {
+    margin-left: 4vw;
+    color: skyblue;
+    font-size: 2em;
+}
+.navigation > h1 {
+    margin-left: 4vw;
+    font-size: 2.3em;
+}
+.navigation a {
+    color: skyblue;
+    transition: .2s;
+}
+.navigation a:hover {
+    color: white;
+    font-size: 1.2em;
+}
+.vortex-header {
+    width: .9em;
+    vertical-align: middle;
+    margin-right: .3em;
+}
+.header > a {
+    position: relative;
+    vertical-align: top;
+    font-size: 2.6em;
+    color: white;
+    text-decoration: none;
+    letter-spacing: .3em;
+    margin-left: 1em;
+    transition: .2s;
+}
+.header > a:hover {
+    color: skyblue;
+}
+.vortex {
+    width: 5vw;
+    margin-left: 50%;
+    margin-top: 50vh;
+    transform: translateX(-50%)
+}
+.alt-page-title {
+    margin-top: 3em;
+    font-size: 4em;
+    text-align: center;
+}
+.alt {
+    margin-top: 5em;
+}
+.alt a {
+    transition: .2s;
+}
+.alt a:hover {
+    color: white
+}
+.mecanico > h1, .mecanico a {
+    color: cornflowerblue;
+}
+.pistoleiro > h1, .pistoleiro a {
+    color: yellow;
+}
+.pesado > h1, .pesado a {
+    color: crimson
+}
+.especialista > h1, .especialista a {
+    color: purple;
+}
+.soldado > h1, .soldado a {
+    color: green;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+@media only screen and (max-width: 600px) {
+    .title {
+      font-size: 5em;
+    }
+    .header > a {
+        font-size: 2.4em;
+    }
+    .vortex-header {
+        width: .7em;
+    }
+  }
